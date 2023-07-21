@@ -4,7 +4,7 @@ in this section i want to set some guide lines on how to use git and what comman
 
 # git structure
 
-we have 2 main branches 1.main 2.dev and in we do development related stuff in dev branch and whenever its ready for production it will tagged with a version and merged with main branch (the production branch) 
+we have 2 main branches 1.main 2.dev and we do development related stuff in dev branch and whenever its ready for production it will tagged with a version and merged with main branch (the production branch) 
 
 ## git features and bugfix
 
