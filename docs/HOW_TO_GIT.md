@@ -1,6 +1,6 @@
 # intro
 
-in this section i want to set some guide lines on how to use git and what commands we need
+in this section I want to set some guide lines on how to use git and what commands we need
 
 # git structure
 
