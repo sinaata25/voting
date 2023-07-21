@@ -28,7 +28,7 @@ Note: these tow branch should only come from dev and merge with dev only
 
 to check what's up in the active repo
 
-## 2. git add [file_name] or git
+## 2. git add [file_name] or git add .
 
 to add file or files to the stage section
 
