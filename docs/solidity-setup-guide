@@ -1,4 +1,0 @@
------------------First install brownie and ganche cli in your system!--------------------
-and what did i do:
-1-maked  folder in Voting named:solidity
-2-in terminal : brownie init({brownie init} command makes some folders and files to start our slidity project)
