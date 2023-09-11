@@ -12,7 +12,7 @@ in the process of developing we mainly do tow things:
     1. adding new features
     2. fixing bugs
 
-so we have tow kind of branches that come from dev branch 
+so we have two kind of branches that come from dev branch 
     1. feature/[name-of-feature]
     2. bugfix/[name-of-bug]
 
