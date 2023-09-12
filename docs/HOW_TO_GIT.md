@@ -34,49 +34,49 @@ Note: these two branch should only come from dev and merge with dev only.
 ### 1. git status
 
 ```console
-git status
+$ git status
 ```
 
 to check what's up in the active repo
 
 ### 2. add files
 
-``` bash
-git add [file name] # for specific file
-git add . # for all files in the current directory
-git add -A # for all files
+``` console
+$ git add [file name] # for specific file
+$ git add . # for all files in the current directory
+$ git add -A # for all files
 ```
 
 to add file or files to the stage section
 
 ### 3. Commit
 
-``` bash
-git commit -m 'commit msg'
+``` console
+$ git commit -m 'commit msg'
 ```
 
 to commit change
 
 ### 4. log
 
-``` bash
-git log
+``` console
+$ git log
 ```
 
 to see all the commits
 
 ### 5 branches
 
-``` bash
-git branch
+``` console
+$ git branch
 ```
 
 to see all active branches
 
 ### 6 git branch [branch_name]
 
-``` bash
-git branch [branch name]
+``` console
+$ git branch [branch name]
 ```
 
 to create new brach out of the current branch
@@ -84,7 +84,7 @@ to create new brach out of the current branch
 ### 7 git checkout
 
 ``` console
-git checkout [branch_name]
+$ git checkout [branch_name]
 ```
 
 to change current working branch to the given branch
@@ -92,7 +92,7 @@ to change current working branch to the given branch
 ### 8 Merge
 
 ``` console
-git merge [branch_name]
+$ git merge [branch_name]
 
 ```
 
