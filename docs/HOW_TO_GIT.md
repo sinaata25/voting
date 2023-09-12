@@ -1,62 +1,104 @@
-# intro
+# HOW TO GIT
 
-in this section I want to set some guide lines on how to use git and what commands we need
+## Intro
 
-# git structure
+In this section I want to set some guide lines on how to use git and what commands we need.
 
-we have 2 main branches 1.main 2.dev and we do development related stuff in dev branch and whenever its ready for production it will tagged with a version and merged with main branch (the production branch) 
+## Git Structure
 
-## git features and bugfix
+we have 2 main branches:
 
-in the process of developing we mainly do tow things:
++ main
++ dev
+
+we do development related stuff in dev branch and whenever its ready for production it will tagged with a version and merged with main branch (the production branch)
+
+## Git Features and Bugfix Branches
+
+in the process of developing we mainly do two things :
     1. adding new features
     2. fixing bugs
 
-so we have two kind of branches that come from dev branch 
+so we have two kind of branches that come from dev branch :
     1. feature/[name-of-feature]
     2. bugfix/[name-of-bug]
 
-any thing that we add to the project we should consider it as feature (from very small change to the code like adding comments or refactoring small section of code up to adding fully working new "Feature")
+any thing that we add to the project we should consider it as feature (from very small change to the code like adding comments or refactoring small section of code up to adding fully working new "Feature").
 
-and any thing that we do to fix any bug will goes under bugfix branch
+and any thing that we do to fix bugs will goes under bugfix branch.
 
-Note: these tow branch should only come from dev and merge with dev only
+Note: these two branch should only come from dev and merge with dev only.
 
-# git commands
+## Git Commands
 
-## 1. git status
+### 1. git status
+
+```console
+git status
+```
 
 to check what's up in the active repo
 
-## 2. git add [file_name] or git add .
+### 2. add files
+
+``` bash
+git add [file name] # for specific file
+git add . # for all files in the current directory
+git add -A # for all files
+```
 
 to add file or files to the stage section
 
-## 3. git commit -m 'commit msg'
+### 3. Commit
+
+``` bash
+git commit -m 'commit msg'
+```
 
 to commit change
 
-## 4. git log
+### 4. log
+
+``` bash
+git log
+```
 
 to see all the commits
 
-## 5 git branch
+### 5 branches
+
+``` bash
+git branch
+```
 
 to see all active branches
 
-## 6 git branch [branch_name]
+### 6 git branch [branch_name]
 
-to create new brach of the current branch
+``` bash
+git branch [branch name]
+```
 
-## 7 git checkout [branch_name}
+to create new brach out of the current branch
 
-to move branch to the given branch
+### 7 git checkout
 
-## 8 git merge [branch_name]
+``` console
+git checkout [branch_name]
+```
+
+to change current working branch to the given branch
+
+### 8 Merge
+
+``` console
+git merge [branch_name]
+
+```
 
 to merge given branch with current branch
 
-# work flow
+## Work Flow
 
 our work flow in this project should be something like this:
 
@@ -88,9 +130,8 @@ and always push the code
 
 when the code finished and new feature added we merge the branch with dev
 
-`git checkout dev` then `git pull origin dev` and then `git merge feature/Oath2-google` 
+`git checkout dev` then `git pull origin dev` and then `git merge feature/Oath2-google`
 
 after merge completed we push the code
 
 `git push origin dev`
-
