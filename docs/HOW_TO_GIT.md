@@ -65,15 +65,15 @@ $ git log
 
 to see all the commits
 
-### 5 branches
+### 5. branches
 
 ``` console
-$ git branch
+$ git branch -r
 ```
 
 to see all active branches
 
-### 6 git branch [branch_name]
+### 6. git branch [branch_name]
 
 ``` console
 $ git branch [branch name]
@@ -81,7 +81,14 @@ $ git branch [branch name]
 
 to create new brach out of the current branch
 
-### 7 git checkout
+
+### 7. publish branch
+
+``` console
+$ git push --set-upstream origin new-branch
+```
+use this command to push new branch to remote repo.
+### 8. git checkout
 
 ``` console
 $ git checkout [branch_name]
@@ -89,7 +96,7 @@ $ git checkout [branch_name]
 
 to change current working branch to the given branch
 
-### 8 Merge
+### 9. Merge
 
 ``` console
 $ git merge [branch_name]
@@ -100,38 +107,28 @@ to merge given branch with current branch
 
 ## Work Flow
 
-our work flow in this project should be something like this:
+our work flow in this project should be something like this :
 
 let say we have to add new auth system with google
 
-first we make sure that we are in the dev branch
+first we make sure that we are in the dev branch '`git checkout dev`'
 
-`git checkout dev`
+then we pull dev to have newest code '`git pull origin dev`'
 
-then we pull dev to have newest code
+then create new branch name 'feature/Oath2-google' '`git branch feature/Oath2-google`'
 
-`git pull origin dev`
+then we publish the new branch to remote repo '`git push --set-upstream origin feature/Oath2-google`'
 
-then create new branch name 'feature/Oath2-google'
+then we move to new branch '`git checkout feature/Oath2-google`'
 
-`git branch feature/Oath2-google`
+then we make sure that we are in the new branch '`git status`'
 
-then we make sure that we are in the new branch
+after that we do some coding and make some commits '`git add .`' and '`git commit -m 'msg'`'
 
-`git status` or `git checkout feature/Oath2-google`
-
-after that we do some coding and make some commits
-
-`git add .` and `git commit -m 'msg'`
-
-and always push the code
-
-`git push origin feature/Oath2-google`
+and always push the code '`git push origin feature/Oath2-google`'
 
 when the code finished and new feature added we merge the branch with dev
 
-`git checkout dev` then `git pull origin dev` and then `git merge feature/Oath2-google`
+'`git checkout dev`' then '`git pull origin dev`' and then '`git merge feature/Oath2-google`'
 
-after merge completed we push the code
-
-`git push origin dev`
+after merge completed we push the code '`git push origin dev`'

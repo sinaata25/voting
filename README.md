@@ -1,3 +1,3 @@
 # voting
 
-This is simple Voting paltform impel with django and solidity
+This is simple Voting platform impalement with django and solidity
